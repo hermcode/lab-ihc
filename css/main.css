@@ -1,3 +1,4 @@
+
 html {
   box-sizing: border-box;
   font-family: 'Roboto',
@@ -43,21 +44,21 @@ a {
   text-align: center;
 }
 .boton {
-  display: flex;
-  align-items: center;
+  margin: 0 auto;
   background-color: #004A8F;
-  width: 300px;
-  justify-content: space-between;
   padding: 15px 20px;
-}
-.boton a {
   color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px;
 }
-.boton-flecha {
+
+.boton:hover {
   background-color: #F5BF26;
-  font-size: 40px;
-  padding: 15px 20px;
-  
+  transition: all linear .3s;
+  color: #000000;
+  font-weight: bold;
 }
 
 /** Header **/
@@ -132,6 +133,10 @@ header {
 
 .registro-preparatorias-contenido a {
   color: #000000;
+  
+}
+.registro-preparatorias-contenido a:hover {
+  text-decoration: underline;
 }
 
 .registro-preparatorias-contenido p {
@@ -160,7 +165,124 @@ header {
   font-size: 20px;
 }
 
+.info-registro-contenido .boton-convocatoria {
+  display: flex;
+  align-items: center;
+}
 
+/* Submenú*/
+.submenu {
+  margin-top: 30px;
+}
+
+.submenu a{
+  display: inline-block;
+  width: 100%;
+  background-color: #E4E4E4;
+  color: #707070;
+  font-size: 24px;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submenu a i {
+  font-size: 40px;
+}
+
+/* Menu Acordeon*/
+.dropdownMenu {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.title {
+  padding: 7px 10px;
+  background-color: #707070;
+  color: white;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.title p{
+  padding: 15px;
+  margin: 0;font-size: 25px;
+
+}
+
+.title p:hover {
+  text-decoration: underline;
+}
+.title:hover {
+  background-color: #E4E4E4;
+  color: #000000;
+  font-weight: bold;
+}
+
+.dropdownButton:hover {
+  cursor: pointer;
+}
+
+.dropdownButton>p .fa {
+  float: right;
+}
+
+.dropdownContent ul {
+  margin: 0;
+  padding: 0 10px;
+}
+
+.dropdownContent,
+.dropdownButton {
+  border: 1px solid #707070;
+}
+
+.dropdownContent {
+  padding: 15px 8px;
+  background-color: #fff;
+  margin-top: -1px;
+}
+
+.dropdownContent ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+.dropdownContent ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.dropdownContent ul li a:hover {
+  color: blue;
+}
+
+/* Costos */
+.costos p{
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 70px;
+}
+
+.costos .submenu {
+  margin-bottom: 100px;
+}
+
+/* Contacto */
+.ayuda .contacto-oficial {
+  text-align: center;
+  margin: 80px 0;
+}
+.contacto-oficial a{
+  color: #004A8F;
+  font-weight: bold;
+  font-size: 30px;
+}
 
 /** Footer **/
 footer {
